@@ -1,0 +1,70 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace ToDoApp
+{
+    public class DBConnection
+    {
+       static MySqlConnection con = null;
+       static MySqlCommand cmd = null;
+       static MySqlDataReader reader = null;
+       static string dbStr = "datasource=localhost;port=3306;username=root;password=root";
+
+        public static Boolean getCmdResult(string query)
+        {
+            try
+            {
+                if(con==null){
+                    con = new MySqlConnection(dbStr);
+                    con.Open();
+                    cmd = new MySqlCommand(query,con);
+                    if(cmd.ExecuteNonQuery()==1){
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+            catch(Exception ex){
+                MessageBox.Show("MySqlConnection/MySqlCommand: " + ex.Message, "Todo List", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return true;
+        }
+
+        public static MySqlDataReader getReader(string query)
+        {
+            try
+            {
+                if (con == null)
+                {
+                    con = new MySqlConnection(dbStr);
+                    con.Open();
+                    cmd = new MySqlCommand(query, con);
+                    reader = cmd.ExecuteReader();
+                    if(reader != null){
+                        return reader;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("MySqlDataReader: " + ex.Message, "Todo List", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+            }
+            finally
+            {
+                con.Close();
+            }
+            return reader;
+        }
+    }
+}

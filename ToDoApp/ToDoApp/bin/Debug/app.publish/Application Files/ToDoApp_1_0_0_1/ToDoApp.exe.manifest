@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ToDoApp.exe" version="1.0.0.1" publicKeyToken="857f083294637a2b" language="en-IN" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="todo1.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ToDoApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ToDoApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="423936">
+      <assemblyIdentity name="MySql.Data" version="6.8.8.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Xa6qyAZoox5yqXrC46XSQdZ0+WFqy3GkTSK85YCxvyM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ToDoApp.exe" size="31232">
+      <assemblyIdentity name="ToDoApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WKg9UKWSgdw9UMo2G7B7/q+K4dU+wWqlj+/qIhe4l6g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="todo1.ico" size="9798">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j5LGtFbQGqH8dmHoinyNiRLRJNicLvN4in7o+YF6S1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ToDoApp.exe.config" size="526">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1QoAmIJgwm6Vih7oJT/WlcXge7SW79ixbVv1sOGJV30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=BHAIRESH\Nethravathi" issuerKeyHash="a5d65cc301c0420e57527a1f23ee7be59fcceef6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OBEFr3s/t3QnvuZYUaaU6SzzNMuQnfujV8G0hy3AILc=</DigestValue></Reference></SignedInfo><SignatureValue>T/0cT/dgIOiHozBG8Z+qNDd9HaoqqEJmVxyQpr36hO27gSysrwxohBzgfBGrZa5UYNLaSjkIcnC607oHprB+bvCieU46RlCSw/Hjqwy4YBZEe9wwwtXTVHLiWsky9iKDto0M0zrruqGT+mEQR0L9Uh0FTk1OIlJPWIr96nBmx6E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>onglkce/yLURLIRreib1wnoKkktsc56fgTgQHGOGdH2XsC6cWG72psXLvhyCN5IA9Id17yTj5YIQX0glSuREDwC51WFI1pYFefgTN9Jguy0BF5BaIA6azfueVH5pMxRfvNpHXBNApuA/+UYmYJA8mpiMCvilvu5qAbV/x9sf4Mk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b720c02d87b4c157a3fb9d90cb34f32ce994a65158e6be2774b73f7baf051138" Description="" Url=""><as:assemblyIdentity name="ToDoApp.exe" version="1.0.0.1" publicKeyToken="857f083294637a2b" language="en-IN" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BHAIRESH\Nethravathi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>jcx4HpCh6CBwFBHQ37R3ImnHSIsGd7zQW2Huu1QMi9o=</DigestValue></Reference></SignedInfo><SignatureValue>SqMxkNCHSD72U95g0Mp1V1oNvHxR6jISGHNqx4I3/UZYXBWjKWa2BXrpvai9iVTsgmqGXGhCZEjBcqFfvHi7/DN8PPYY8suk7LZ38SeLYaJ8k48EahtaVn4hS8mljLvn9FDcHAu5fgZb3aK9TOYLAhBECEB0y8IHDp+qKADuXMg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>onglkce/yLURLIRreib1wnoKkktsc56fgTgQHGOGdH2XsC6cWG72psXLvhyCN5IA9Id17yTj5YIQX0glSuREDwC51WFI1pYFefgTN9Jguy0BF5BaIA6azfueVH5pMxRfvNpHXBNApuA/+UYmYJA8mpiMCvilvu5qAbV/x9sf4Mk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQG65FCdlxwoBKZLRUAKW5RDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAQgBIAEEASQBSAEUAUwBIAFwATgBlAHQAaAByAGEAdgBhAHQAaABpMB4XDTE5MDYyNTEyMTA1NloXDTIwMDYyNDE4MTA1NlowMzExMC8GA1UEAx4oAEIASABBAEkAUgBFAFMASABcAE4AZQB0AGgAcgBhAHYAYQB0AGgAaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAonglkce/yLURLIRreib1wnoKkktsc56fgTgQHGOGdH2XsC6cWG72psXLvhyCN5IA9Id17yTj5YIQX0glSuREDwC51WFI1pYFefgTN9Jguy0BF5BaIA6azfueVH5pMxRfvNpHXBNApuA/+UYmYJA8mpiMCvilvu5qAbV/x9sf4MkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBU/RNdXH0v/OHTdpY5juE97xIqTSx0c4BMQuHBeFnSauVUv/4qQW7WtJadC4XCxU/EZ2sXntLi7nkCoH9M1EDHUVCMOTDfeDihD6oGrhBWlMq+UoHVTaXGbxnH2cureWMsIlUNDgLX4afB9LMrSh1TdSopqgLKcSqaCryRnxtDPQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

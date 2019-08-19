@@ -1,0 +1,13 @@
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\bin\Debug\DBConnection.exe
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\bin\Debug\DBConnection.exe.config
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.Form1.resources
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.InsertData.resources
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.ListsForm.resources
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.Properties.Resources.resources
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.csproj.GenerateResource.Cache
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.exe
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.pdb
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\bin\Debug\DBConnection.pdb
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.csprojResolveAssemblyReference.cache
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.passingForm.resources
+C:\Users\Bhairesh\Documents\Visual Studio 2013\Projects\DBConnection\DBConnection\obj\Debug\DBConnection.recivedForm.resources
